@@ -119,7 +119,9 @@ export function CabecalhoProjeto({
   return (
     <div className="flex items-start justify-between gap-4">
       <div className="flex flex-col gap-1">
-        <h1 className="text-2xl font-semibold tracking-tight">{nome}</h1>
+        <h1 className="text-2xl font-semibold tracking-tight text-itau-azul dark:text-foreground">
+          {nome}
+        </h1>
         {descricao && <p className="text-muted-foreground">{descricao}</p>}
       </div>
       <div className="flex shrink-0 gap-2">

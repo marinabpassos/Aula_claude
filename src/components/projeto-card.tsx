@@ -40,7 +40,9 @@ export function ProjetoCard({ projeto }: { projeto: Projeto }) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>{projeto.nome}</CardTitle>
+        <CardTitle className="text-itau-azul dark:text-foreground">
+          {projeto.nome}
+        </CardTitle>
         {projeto.descricao && (
           <CardDescription>{projeto.descricao}</CardDescription>
         )}
@@ -64,7 +66,7 @@ export function ProjetoCard({ projeto }: { projeto: Projeto }) {
       <CardFooter>
         <Link
           href={`/projetos/${projeto.id}`}
-          className={buttonVariants({ variant: "outline", size: "sm" })}
+          className={buttonVariants({ variant: "secondary", size: "sm" })}
         >
           Abrir
           <ArrowRight />
