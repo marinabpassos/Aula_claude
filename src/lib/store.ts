@@ -39,6 +39,11 @@ function getStore(): Store {
   return globalForStore.__projetosStore
 }
 
+// Apenas para testes: reinicia o store com um Map vazio (sem seed).
+export function _resetStoreParaTestes(): void {
+  globalForStore.__projetosStore = new Map()
+}
+
 export function listarProjetos(): Projeto[] {
   return [...getStore().values()].sort((a, b) =>
     b.criadoEm.localeCompare(a.criadoEm),
