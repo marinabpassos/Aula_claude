@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(where.exe winget 2>$null; \"---\"; where.exe choco 2>$null; \"---fnm---\"; where.exe fnm 2>$null; \"---volta---\"; where.exe volta 2>$null)",
+      "PowerShell(corepack *)"
+    ]
+  }
+}
